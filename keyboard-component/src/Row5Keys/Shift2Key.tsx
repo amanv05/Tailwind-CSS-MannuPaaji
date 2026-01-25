@@ -1,12 +1,11 @@
-
 const Shift2Key = () => {
   return (
-    <div className="flex items-end w-22 h-8 rounded-md bg-black ring-1 ring-zinc-700 shadow-[0_3px_4px_0.1px_rgba(255,255,255,0.5)] hover:scale-[0.98] hover:shadow-none transition-all duration-100">
+    <div className="flex items-end w-22 h-8 rounded-md bg-black ring-1 ring-zinc-700 shadow-[0_3px_7px_0.1px_rgba(255,255,255,0.8)] hover:scale-[0.98] hover:shadow-none transition-all duration-100">
       <div className="ml-17 mb-1">
         <div className="text-white text-[7px]">shift</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Shift2Key
+export default Shift2Key;

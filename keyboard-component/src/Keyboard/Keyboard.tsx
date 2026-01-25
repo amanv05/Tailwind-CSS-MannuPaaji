@@ -21,10 +21,21 @@ import ReturnKey from "../Row4Keys/ReturnKey";
 import StringKey from "../Row4Keys/StringKey";
 import Shift2Key from "../Row5Keys/Shift2Key";
 import ShiftKey from "../Row5Keys/ShiftKey";
+import ArrowDownKey from "../Row6Keys/ArrowDownKey";
+import ArrowLeftKey from "../Row6Keys/ArrowLeftKey";
+import ArrowRightKey from "../Row6Keys/ArrowRightKey";
+import ArrowUpKey from "../Row6Keys/ArrowUpKey";
+import Command2Key from "../Row6Keys/Command2Key";
+import CommandKey from "../Row6Keys/CommandKey";
+import ControlKey from "../Row6Keys/ControlKey";
+import FNKey from "../Row6Keys/FNKey";
+import Option2Key from "../Row6Keys/Option2Key";
+import OptionKey from "../Row6Keys/OptionKey";
+import SpaceBar from "../Row6Keys/SpaceBar";
 
 const Keyboard = () => {
   return (
-    <div className="grid grid-cols-1 grid-rows-6 items-start bg-zinc-800 w-143 h-60 rounded-xl p-2">
+    <div className="grid grid-cols-1 grid-rows-6 items-start bg-zinc-800 w-143 h-59 rounded-xl p-2">
       <div className="flex gap-1.5 row-span-1">
         <EscKey />
         <F1Key />
@@ -101,6 +112,25 @@ const Keyboard = () => {
         <NormalKey upperLetter=">" lowerLetter="." />
         <NormalKey upperLetter="?" lowerLetter="/" />
         <Shift2Key />
+      </div>
+      <div className="flex gap-1.5 row-span-1">
+        <FNKey />
+        <ControlKey />
+        <OptionKey />
+        <CommandKey />
+        <SpaceBar />
+        <Command2Key />
+        <Option2Key />
+        <div className="grid grid-cols-1 gap-0.5">
+          <div className="col-span-1 ml-9.25">
+            <ArrowUpKey />
+          </div>
+          <div className="flex gap-0.5">
+            <ArrowLeftKey />
+            <ArrowDownKey />
+            <ArrowRightKey />
+          </div>
+        </div>
       </div>
     </div>
   );

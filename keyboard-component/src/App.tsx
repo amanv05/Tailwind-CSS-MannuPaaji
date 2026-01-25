@@ -1,12 +1,12 @@
-import "./index.css"
-import Keyboard from "./pages/Keyboard"
+import "./index.css";
+import Keyboard from "./Keyboard/Keyboard";
 
 const App = () => {
   return (
-    <div className="w-full h-screen bg-white flex justify-center items-center">
+    <div className="w-full h-screen bg-black flex justify-center items-center">
       <Keyboard />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
