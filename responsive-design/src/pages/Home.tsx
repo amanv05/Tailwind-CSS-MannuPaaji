@@ -1,9 +1,9 @@
-import Responsive from "../components/Responsive"
+import NavBar from "../components/NavBar"
 
 const Home = () => {
   return (
-    <div className="h-screen w-full flex items-center justify-center">
-        <Responsive />
+    <div>
+      <NavBar />
     </div>
   )
 }
